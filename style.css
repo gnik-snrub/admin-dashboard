@@ -76,6 +76,46 @@ header {
   justify-content: space-between;
 }
 
+#lowerHeader > section:first-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 35px;
+  height: 64px;
+}
+
+#lowerHeader > section:first-child > img {
+  height: 64px;
+  width: 64px;
+}
+
+#lowerHeader > section:first-child > span {
+  font-size: 100%;
+}
+
+#lowerHeader > section:first-child > span + span {
+  font-size: 180%;
+}
+#lowerHeader > section:nth-child(2) {
+  width: 28%;
+  height: 100%;
+  margin-right: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lowerHeader button {
+  border: none;
+  background-color: rgb(25, 146, 212);
+  color: white;
+  padding: 10px;
+  width: 90px;
+  border-radius: 25px;
+}
+
 main {
   background-color: rgb(226, 232, 240);
   display: flex;
