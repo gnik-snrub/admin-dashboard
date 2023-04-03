@@ -22,6 +22,7 @@ header {
   background-color: white;
   display: flex;
   flex-direction: column;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
 }
 
 #upperHeader {
@@ -114,6 +115,53 @@ header {
   padding: 10px;
   width: 90px;
   border-radius: 25px;
+}
+
+#projects {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+#projects > h3 {
+  width: 100%;
+  height: min-content;
+  margin-left: 15px;
+} 
+
+.project {
+  background-color: white;
+  width: 39%;
+  border-radius: 8px;
+  border: none;
+  border-left: 5px solid orange;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  margin-left: 15px;
+  margin-bottom: 25px;
+  height: 200px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: 15% auto 15%;
+}
+
+.project > p {
+  color: rgb(120, 120, 120);
+  font-weight: 400;
+}
+
+.projectButtons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 9px;
+  filter: grayscale(100%);
+}
+
+.projectButtons > button {
+  border: none;
+  background-color: inherit;
 }
 
 main {
