@@ -200,7 +200,43 @@ main > aside {
   margin: 0px;
 }
 
+#trendingWrapper {
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  padding: 5px 20px 5px 20px;
+}
 
+.trend {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 46px auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "image user"
+    "image project";
+}
+
+.trend img {
+  width: 44px;
+  grid-area: image;
+}
+
+.trend span {
+  font-size: 10px;
+}
+
+.trend span:nth-child(2) {
+  grid-area: user;
+}
+
+.trend span:nth-child(3) {
+  grid-area: project;
+  color: rgb(120, 120, 120);
+}
 
 main {
   background-color: rgb(226, 232, 240);
